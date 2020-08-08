@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:raspi_tank/ui/sign_up.dart';
 
 void main() {
   runApp(MyApp());
@@ -56,7 +57,8 @@ class EntryPage extends StatelessWidget {
           child: RaisedButton.icon(
             icon: const Icon(Icons.add),
             onPressed: () {
-              // next page
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SignUpPage()));
             },
             label: Text('コマンダーを追加'),
           ),
